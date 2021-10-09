@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "husky install",
+    "lint": "lint-staged",
     "cz": "git-cz"
   },
   "repository": {
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/zhouIyu/ts-lib-template#readme",
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@types/node": "^16.10.3",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -29,6 +33,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "git-cz": "^4.7.6",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3"
   },
@@ -36,5 +42,12 @@
     "commitizen": {
       "path": "git-cz"
     }
+  },
+  "lint-staged": {
+    "src/**/*.(js|ts)": [
+      "prettier --writer",
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
