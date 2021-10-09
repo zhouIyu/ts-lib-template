@@ -1,0 +1,40 @@
+{
+  "name": "ts-lib-template",
+  "version": "0.0.1",
+  "description": "typescript lib template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouIyu/ts-lib-template.git"
+  },
+  "keywords": [
+    "typescript",
+    "lib"
+  ],
+  "author": "zhouIyu<zhouzhuang95@126.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouIyu/ts-lib-template/issues"
+  },
+  "homepage": "https://github.com/zhouIyu/ts-lib-template#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "git-cz": "^4.7.6",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  }
+}
