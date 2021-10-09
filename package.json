@@ -6,7 +6,7 @@
   "module": "dist/index.es5.js",
   "scripts": {
     "dev": "rollup -c ./rollup.config.js",
-    "preinstall": "husky install",
+    "prepare": "husky install",
     "lint": "lint-staged",
     "cz": "git-cz"
   },
